@@ -1,9 +1,9 @@
 
-// Activity:
+Activity:
 
-// In the below exercises, write code that achieves
-// the desired result. To check your work, run this
-// file in your Terminal.
+In the below exercises, write code that achieves
+the desired result. To check your work, run this
+file in your Terminal.
 
 var foods = {
   apples: 23, 
@@ -11,21 +11,24 @@ var foods = {
   eggs: 48
 }
 
-// Write code that prints all of the 'keys' of the foods variable 
-// you created above:
-// YOUR CODE HERE
+Write code that prints all of the 'keys' of the foods variable 
+you created above:
 
-// Write code that prints all of the 'values' of the foods variable 
-// you created above:
-// YOUR CODE HERE
+  console.log(Object.keys(foods))
 
-// Write code that prints the value of the second food of the foods variable 
-// you created above:
-// YOUR CODE HERE
+Write code that prints all of the 'values' of the foods variable 
+you created above:
 
-// Write code that adds a food to the foods object. 
-// Then, print the updated object:
-// YOUR CODE HERE
+console.log(Object.values(foods))
+
+Write code that prints the value of the second food of the foods variable 
+you created above:
+console.log(Object.values(foods)[1])
+
+Write code that adds a food to the foods object. 
+Then, print the updated object:
+foods.bread = 5
+console.log(foods)
 
 
 // -------------------
