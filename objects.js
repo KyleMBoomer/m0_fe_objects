@@ -1,34 +1,34 @@
 
-Activity:
+// Activity:
 
-In the below exercises, write code that achieves
-the desired result. To check your work, run this
-file in your Terminal.
+// In the below exercises, write code that achieves
+// the desired result. To check your work, run this
+// file in your Terminal.
 
-var foods = {
-  apples: 23, 
-  grapes: 507, 
-  eggs: 48
-}
+// var foods = {
+//   apples: 23, 
+//   grapes: 507, 
+//   eggs: 48
+// }
 
-Write code that prints all of the 'keys' of the foods variable 
-you created above:
+// Write code that prints all of the 'keys' of the foods variable 
+// you created above:
 
-  console.log(Object.keys(foods))
+//   console.log(Object.keys(foods))
 
-Write code that prints all of the 'values' of the foods variable 
-you created above:
+// Write code that prints all of the 'values' of the foods variable 
+// you created above:
 
-console.log(Object.values(foods))
+// console.log(Object.values(foods))
 
-Write code that prints the value of the second food of the foods variable 
-you created above:
-console.log(Object.values(foods)[1])
+// Write code that prints the value of the second food of the foods variable 
+// you created above:
+// console.log(Object.values(foods)[1])
 
-Write code that adds a food to the foods object. 
-Then, print the updated object:
-foods.bread = 5
-console.log(foods)
+// Write code that adds a food to the foods object. 
+// Then, print the updated object:
+// foods.bread = 5
+// console.log(foods)
 
 
 // -------------------
@@ -47,11 +47,19 @@ console.log(foods)
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+var email = {
+time: "21:30",
+sender: "Dorothy",
+recipient: "Aunty Anne",
+message: "Help!",
+delivered: true 
+};
+console.log(email)
+console.log(Object.keys(email))
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(email))
 
 
 // -------------------
