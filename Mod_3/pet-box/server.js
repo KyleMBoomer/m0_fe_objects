@@ -26,6 +26,22 @@ app.get('/api/v1/pets', (request, response) => {
     response.send(pets)
 })
 
+app.locals.albums = [
+    {
+        albumName: 'OK Computer',
+        artist: 'Radiohead'
+    },
+    {
+        albumName: 'Still Bill',
+        artist: 'Bill Withers'
+    }
+]
+
+app.get('/api/v1/albums', (req, res) => {
+    const albums = app.locals.albums
+    res.send(albums)
+})
+
 app.get('/api/v1/pets/:id', (request, response) => {
     const { id } = request.params;
     const pet = app.locals.pets.find(pet => pet.id === id);
@@ -66,3 +82,4 @@ app.delete('/api/v1/pets/:id', (request, response) => {
     const deletePet = app.locals.pets.splice(petIndex, 1)[0]
     response.status(200).json(deletePet);
 })
+
